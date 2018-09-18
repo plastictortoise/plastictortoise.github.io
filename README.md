@@ -5,8 +5,7 @@
 <br>
 <p>So, I decided to change it a bit, to challenge myself.</p>
 <br>
-<p>Thats why I decided <i>not</i> to use css, but to use</p>
-<a href="https://www.w3schools.com/w3css/default.asp">w3.css </a>
+<p>Thats why I decided <i>not</i> to use css, but to use w3.css </p>
 <p>instead, which I have never used before.</p>
 <br>
 <p>After attempting w3.css, I realised 2 things</p>
