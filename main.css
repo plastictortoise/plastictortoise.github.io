@@ -8,7 +8,6 @@
     padding: 15px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
   }
   .navbar a:hover, a:active {
     background-color: #17a3c6;
@@ -24,4 +23,8 @@
     text-align: center;
     font-family: Comfortaa;
   }
+.navbar a {
+  display: block;
+  padding 5pxs;
+}
     
