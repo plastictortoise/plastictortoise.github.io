@@ -24,4 +24,13 @@
   display: inline-block;
   padding 5pxs;
 }
-    
+h1 {
+  font-family: Comfortaa;
+  text-align: center;
+  font-size: 72px;
+}
+p {
+  font-family: Comfortaa;
+  text-align: center;
+  font-size: 24px;
+}
