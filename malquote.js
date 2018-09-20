@@ -4,7 +4,7 @@ let Quotes = [
 "Yo", 
 "You are a really unlucky person if you aren't me", 
 "The Netflickses is a TV App", 
-"I am Professional Help", 
+"I am Here, You may now be  happy", 
 "What do you want with me, Non- dog?", 
 "You are who you are, even if you aren't a dog", 
 "All these Humans thinking they are so smart, while we do all the hard work" ,
