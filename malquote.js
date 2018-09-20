@@ -15,5 +15,5 @@ let Quotes = [
 "Oh no, not a Cat"
 ];
 let x = Math.floor(Math.random() * 14);
-let y = Qoutes[x]
+let y = Quotes[x]
 document.getElementById("Quote").innerHTML = y;
