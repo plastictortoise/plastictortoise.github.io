@@ -39,3 +39,15 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
+#Quote {
+  font-size: 20px;
+  font-family: Libre Baskerville;
+  text-align: center;
+  color: #565656;
+}
+h3 {
+  font-size: 14px;
+  font-family: Libre Baskerville;
+  text-align: center;
+  color: #afafaf;
+}
