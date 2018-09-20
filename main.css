@@ -12,9 +12,6 @@
   .navbar a:hover, a:active {
     background-color: #17a3c6;
   }
-    .navbar .active{
-    background-color: #17a3c6;
-  }
   .navbar {
     width: 100%;
     padding: 0;
@@ -24,7 +21,7 @@
     font-family: Comfortaa;
   }
 .navbar a {
-  display: block;
+  display: inline-block;
   padding 5pxs;
 }
     
