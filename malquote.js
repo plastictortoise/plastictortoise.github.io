@@ -14,6 +14,6 @@ let Quotes = [
 "Your species would've been wiped out thousands of times without us dogs",
 "Oh no, not a Cat"
 ];
-let x = Math.floor(Math.random() * 14);
+let x = Math.floor(Math.random() * 13);
 let y = Quotes[13]
 document.getElementById("Quote").innerHTML = y;
