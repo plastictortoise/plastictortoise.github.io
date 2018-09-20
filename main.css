@@ -41,13 +41,13 @@ p {
 }
 #Quote {
   font-size: 20px;
-  font-family: Crimson Text;
+  font-family: 'Crimson Text';
   text-align: center;
   color: #565656;
 }
 h3 {
   font-size: 14px;
-  font-family: Crimson Text;
+  font-family: 'Crimson Text';
   text-align: center;
   color: #afafaf;
 }
