@@ -7,7 +7,7 @@ let Quotes = [
 "I am Professional Help", 
 "What do you want with me, Non- dog?", 
 "You are who you are, even if you aren't a dog", 
-"All these Humans thinking tey are so smart, while we do all the hard work" ,
+"All these Humans thinking they are so smart, while we do all the hard work" ,
 "Humans are so unhygenic, eating with those metal things",
 "How many times do I have to tell you, A credit card is something with money on it",
 "You're too lucky, you Humans",
