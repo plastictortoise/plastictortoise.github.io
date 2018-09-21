@@ -60,7 +60,8 @@ code {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  background-color: #afafaf;
+  background-color: #e2e2e2;
+  width: 25%;
 }
 h4 {
   font-size: 20px;
