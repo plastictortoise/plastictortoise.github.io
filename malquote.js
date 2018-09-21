@@ -1,3 +1,4 @@
+
 let Quotes = [
 "Life's too short to not own a dog", 
 "Yo", 
@@ -17,6 +18,6 @@ let Quotes = [
 "You treat us like pets, even though you are the pets",
 "Aside from cats, Humans are the worst thing that has ever happened to the world"
 ];
-let x = Math.floor(Math.random() * 16);
+let x = Math.floor(Math.random() * 17);
 let y = '\"' + Quotes[x] + '\"'
 document.getElementById("Quote").innerHTML = y;
