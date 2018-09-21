@@ -14,9 +14,9 @@ let Quotes = [
 "Oh no, not a Cat",
 "You think K2 is a high mountain? You should see K9",
 "Us dogs have a type of tooth named after us, and what do you have?",
-"You trat us like pets, even though you are the pets",
+"You treat us like pets, even though you are the pets",
 "Aside from cats, Humans are the worst thing that has ever happened to the world"
 ];
 let x = Math.floor(Math.random() * 16);
-let y = '\"' + Quotes[x] + '\"'
+let y = '\"' + Quotes[16] + '\"'
 document.getElementById("Quote").innerHTML = y;
