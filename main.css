@@ -63,10 +63,33 @@ code {
   background-color: #e2e2e2;
   outline: 10px solid #e2e2e2;
   width: 30%;
-  font-size: 80%;
 }
 h4 {
   font-size: 20px;
   font-family: Comfortaa;
   text-align: center;
+}
+@media (min-width: 1370px) {
+  code {
+      width: 30%;
+      font-size: 80%;
+  }
+}
+@media (max-width: 1369px) {
+  code {
+      width: 50%;
+      font-size: 60%;
+  }
+}
+@media (max-width: 900px) {
+  code {
+          width: 70%;
+      font-size: 60%;
+  }
+}
+@media (max-width: 400px) {
+  code {
+          width: 80%;
+      font-size: 50%;
+  }
 }
