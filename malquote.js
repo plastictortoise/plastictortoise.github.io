@@ -18,5 +18,5 @@ let Quotes = [
 "Aside from cats, Humans are the worst thing that has ever happened to the world"
 ];
 let x = Math.floor(Math.random() * 16);
-let y = '\"' + Quotes[16] + '\"'
+let y = '\"' + Quotes[x] + '\"'
 document.getElementById("Quote").innerHTML = y;
