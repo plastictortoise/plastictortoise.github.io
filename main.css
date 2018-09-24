@@ -107,5 +107,6 @@ h4 {
   margin-right: auto;
   margin-left: auto;
   border: none;
+  cursor: pointer;
 }
 
