@@ -7,7 +7,6 @@
 }
   .leftbar a:link, a:visited {
     background-color: #eeeeee;
-    color: #000000;
     padding-top: 15px;
         padding-bottom: 15px;
     text-align: center;
@@ -20,7 +19,6 @@
   }
   .leftbar a:hover, a:active {
     background-color: #17a3c6;
-    color: #ffffff;
   }
   .leftbar a {
     font-family: Comfortaa;
