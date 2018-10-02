@@ -112,3 +112,9 @@ h4 {
   color: #ffffff;
 }
 
+.left-bar {
+  height: 100%;
+  float: left;
+  width: 20%;
+  background-color: #cccccc;
+}
