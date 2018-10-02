@@ -130,6 +130,4 @@ h4 {
   .leftbar a:hover, a:active {
     background-color: #17a3c6;
   }
-  .leftbar a{
-    display: block;
-  }
+
