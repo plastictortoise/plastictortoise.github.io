@@ -1,0 +1,27 @@
+.leftbar {
+  height: 100%;
+  float: left;
+  width: 20%;
+  background-color: #eeeeee;
+  padding-top: 0px;
+}
+  .leftbar a:link, a:visited {
+    background-color: #eeeeee;
+    color: #000000;
+    padding-top: 15px;
+        padding-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 35%;
+    padding-left: 35%;
+  }
+  .leftbar a:hover, a:active {
+    background-color: #17a3c6;
+    color: #ffffff;
+  }
+  .leftbar a {
+    font-family: Comfortaa;
+  }
