@@ -128,8 +128,8 @@ h4 {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 50%;
-    padding-left:50%;
+    padding-right: 35%;
+    padding-left: 35%;
   }
   .leftbar a:hover, a:active {
     background-color: #17a3c6;
