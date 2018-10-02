@@ -22,7 +22,6 @@
   }
 .navbar a {
   display: inline-block;
-  padding 5pxs;
 }
 h1 {
   font-family: Comfortaa;
@@ -112,10 +111,25 @@ h4 {
   color: #ffffff;
 }
 
-.left-bar {
+.leftbar {
   height: 100%;
   float: left;
   width: 20%;
   background-color: #eeeeee;
   padding-top: 0px;
 }
+  .leftbar a:link, a:visited {
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 15px;
+        padding-bottom: 15px;
+    width: inherit;
+    text-align: center;
+    text-decoration: none;
+  }
+  .leftbar a:hover, a:active {
+    background-color: #17a3c6;
+  }
+  .leftbar a{
+    display: block;
+  }
