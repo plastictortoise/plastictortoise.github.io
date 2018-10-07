@@ -22,6 +22,12 @@
   .leftbar a {
     font-family: Comfortaa;
   }
-table {
-  width: 100%
+table, th, td {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+  text-align: center;
+  font-family: Comfortaa;
+}
+th, td {
+  padding: 10px;
 }
