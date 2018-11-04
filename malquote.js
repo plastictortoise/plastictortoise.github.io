@@ -6,6 +6,7 @@ let Quotes = [
 ];
 let x = Math.floor(Math.random() * 3);
 let y = Quotes[x];
+let z = "";
 document.getElementById("Quote").innerHTML = y;
 if (y != "Home") {
   let z = "https://simplebinary.github.io/" + y + ".html";
