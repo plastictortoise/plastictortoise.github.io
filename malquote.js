@@ -13,4 +13,4 @@ if (y != "Home") {
 } else {
   z = "https://simplebinary.github.io/";
 }
-document.querySelector("button")..setAttribute( "onClick", "javascript: link(z);");
+document.querySelector("button").setAttribute( "onClick", "javascript: link(z);");
