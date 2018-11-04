@@ -4,7 +4,7 @@ let Quotes = [
 "About",
 "Home"
 ];
-let x = Math.floor(Math.random() * 4);
+let x = Math.floor(Math.random() * 3);
 let y = Quotes[x];
 document.getElementById("Quote").innerHTML = y;
 if (y != "Home") {
