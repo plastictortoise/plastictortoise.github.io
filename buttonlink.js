@@ -1,3 +1,3 @@
-function link(href) {
-  window.location.replace(href);
+function link(hre) {
+  window.location.href(hre);
 }
