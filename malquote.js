@@ -9,8 +9,8 @@ let y = Quotes[x];
 let z = "";
 document.getElementById("Quote").innerHTML = y;
 if (y != "Home") {
-  let z = "https://simplebinary.github.io/" + y + ".html";
+  z = "https://simplebinary.github.io/" + y + ".html";
 } else {
-  let z = "https://simplebinary.github.io/";
+  z = "https://simplebinary.github.io/";
 }
 document.querySelector("button").onclick = "link(" + z + ")";
