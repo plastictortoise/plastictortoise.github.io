@@ -1,3 +1,3 @@
 function link(hre) {
-  window.location.href(hre);
+  window.location.href = hre;
 }
