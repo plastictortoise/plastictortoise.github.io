@@ -37,12 +37,6 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
-#Quote {
-  font-size: 20px;
-  font-family: Comfortaa;
-  text-align: center;
-  color: #565656;
-}
 h3 {
   font-size: 14px;
   font-family: Comfortaa;
@@ -67,34 +61,10 @@ h4 {
   font-family: Comfortaa;
   text-align: center;
 }
-@media (min-width: 1370px) {
-  code {
-      width: 30%;
+@media (max-width: 500px) {
+  .navbar a {
+      width: 25%;
       font-size: 80%;
-  }
-}
-@media (max-width: 1369px) {
-  code {
-      width: 50%;
-      font-size: 60%;
-  }
-}
-@media (max-width: 900px) {
-  code {
-          width: 70%;
-      font-size: 60%;
-  }
-}
-@media (max-width: 550px) {
-  code {
-          width: 90%;
-      font-size: 50%;
-  }
-}
-@media (max-width: 320px) {
-  code {
-          width: 100%;
-      font-size: 40%;
   }
 }
 .dlbox button {
@@ -108,12 +78,4 @@ h4 {
   cursor: pointer;
   font-family: Comfortaa;
   color: #ffffff;
-}
-
-.leftbar {
-  height: 100%;
-  float: left;
-  width: 20%;
-  background-color: #eeeeee;
-  padding-top: 0px;
 }
