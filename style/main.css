@@ -41,11 +41,41 @@ h1 {
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
 }
+.navi .navImage {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  float:  left;
+  padding:  10px 15px;
+}
+.navi .imageActive  {
+  border-bottom: 2px solid #000;
+}
+.navi .navImage:hover {
+    border-bottom: 2px solid #fff;
+    animation: pulse2 1s;
+    animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+}
 p {
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   font-size: 2vw;
+}
+@keyframes pulse2 {
+  0% {
+    color:  #ffffff;
+    -webkit-filter: invert(100%);
+  filter: invert(100%); 
+  }
+  100% {
+    color: #021533;
+    -webkit-filter: invert(0%);
+  filter: invert(0%);
+    border-bottom: 2px solid #ff0000;
+    background-color: #ffffff;
+  }
 }
 @keyframes pulse {
   0% {
@@ -66,6 +96,11 @@ p {
     font-size: 5vw;
   }
   .navi li .navButton {
+    width: 100%;
+    text-align: center;
+    float: right;
+  }
+  .navi li .navImage {
     width: 100%;
     text-align: center;
     float: right;
