@@ -50,7 +50,7 @@ h1 {
 .navi .imageActive  {
   border-bottom: 2px solid #000;
 }
-.navi .navImage:hover {
+.navi .navImage:hover, .navi .navImage:active {
     border-bottom: 2px solid #000;
     animation: pulse2 1s;
     animation-fill-mode: forwards;
