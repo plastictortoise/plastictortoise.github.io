@@ -51,7 +51,7 @@ h1 {
   border-bottom: 2px solid #000;
 }
 .navi .navImage:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000;
     animation: pulse2 1s;
     animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
