@@ -63,6 +63,48 @@ p {
   color: #ffffff;
   font-size: 2vw;
 }
+.postList h2 {
+    font-size:  3vw;
+  font-family: "Audiowide", sans-serif;
+  font-weight: lighter;
+  padding-bottom: .3em;
+  border-bottom: 2px solid #f2777a;
+  text-align: center;
+  color: #ffffff;
+}
+.postList ul {
+  list-style-type: none;
+  padding: 0;
+  margin:  0;
+  overflow: hidden;
+  text-align: center;
+}
+.postList a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+  .postList a:hover {
+    text-decoration: underline;
+  }
+.controlGroup .back {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  float:  left;
+  padding: 10px;
+}
+.controlGroup .forward {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  float: right;
+  padding: 10px;
+}
+.controlGroup a:hover {
+    text-decoration: underline;
+}
 @keyframes pulse2 {
   0% {
     color:  #ffffff;
@@ -91,6 +133,16 @@ p {
   h1 {
     font-size:  7.5vw;
     font-family: "Roboto","Audiowide", sans-serif;
+  }
+  .postList h2 {
+    font-size:  5vw;
+  font-family: "Roboto", sans-serif;
+}
+  .postList a {
+    font-size: 5vw;
+  }
+  .controlGroup a {
+    font-size: 5vw;
   }
   p {
     font-size: 5vw;
