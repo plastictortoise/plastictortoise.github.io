@@ -1,3 +1,4 @@
+function highlight() {
 let z = 0;
 while (document.querySelectorAll(".myCode").length != z) {
     codeColour(document.getElementsByClassName("myCode")[z]);
@@ -621,4 +622,5 @@ function codeColour(elmnt, mode) {
         }
         return [-1, -1, func];
     }
+}
 }
