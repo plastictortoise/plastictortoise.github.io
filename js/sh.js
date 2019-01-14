@@ -5,24 +5,24 @@ while (document.querySelectorAll(".myCode").length != z) {
     z += 1;
 }
 function codeColour(elmnt, mode) {
-    var lang = mode || "html";
-    var elmntObj = elmnt;
-    var elmntTxt = elmntObj.innerHTML;
-    var tagcolor = "pink";
-    var tagnamecolor = "orange";
-    var attributecolor = "red";
-    var attributevaluecolor = "skyblue";
-    var commentcolor = "lawngreen";
-    var cssselectorcolor = "orange";
-    var csspropertycolor = "red";
-    var csspropertyvaluecolor = "skyblue";
-    var cssdelimitercolor = "white";
-    var cssimportantcolor = "red";
-    var jscolor = "white";
-    var jskeywordcolor = "skyblue";
-    var jsstringcolor = "orange";
-    var jsnumbercolor = "red";
-    var jspropertycolor = "white";
+    let lang = mode || "html";
+    let elmntObj = elmnt;
+    let elmntTxt = elmntObj.innerHTML;
+    let tagcolor = "pink";
+    let tagnamecolor = "orange";
+    let attributecolor = "red";
+    let attributevaluecolor = "skyblue";
+    let commentcolor = "lawngreen";
+    let cssselectorcolor = "orange";
+    let csspropertycolor = "red";
+    let csspropertyvaluecolor = "skyblue";
+    let cssdelimitercolor = "white";
+    let cssimportantcolor = "red";
+    let jscolor = "white";
+    let jskeywordcolor = "skyblue";
+    let jsstringcolor = "orange";
+    let jsnumbercolor = "red";
+    let jspropertycolor = "white";
     elmntObj.style.fontFamily = "Consolas,'Courier New', monospace";
     if (!lang) {
         lang = "html";
@@ -39,7 +39,7 @@ function codeColour(elmnt, mode) {
     elmntObj.innerHTML = elmntTxt;
 
     function extract(str, start, end, func, repl) {
-        var s,
+        let s,
             e,
             d = "",
             a = [];
@@ -62,7 +62,7 @@ function codeColour(elmnt, mode) {
         this.arr = a;
     }
     function htmlMode(txt) {
-        var rest = txt,
+        let rest = txt,
             done = "",
             php,
             comment,
@@ -117,7 +117,7 @@ function codeColour(elmnt, mode) {
         return rest;
     }
     function tagMode(txt) {
-        var rest = txt,
+        let rest = txt,
             done = "",
             startpos,
             endpos,
@@ -145,7 +145,7 @@ function codeColour(elmnt, mode) {
         return "<span style=color:" + tagnamecolor + ">" + result + "</span>";
     }
     function attributeMode(txt) {
-        var rest = txt,
+        let rest = txt,
             done = "",
             startpos,
             endpos,
@@ -195,7 +195,7 @@ function codeColour(elmnt, mode) {
         return "<span style=color:" + commentcolor + ">" + txt + "</span>";
     }
     function cssMode(txt) {
-        var rest = txt,
+        let rest = txt,
             done = "",
             s,
             e,
@@ -252,7 +252,7 @@ function codeColour(elmnt, mode) {
         return "<span style=color:" + cssselectorcolor + ">" + rest + "</span>";
     }
     function cssPropertyMode(txt) {
-        var rest = txt,
+        let rest = txt,
             done = "",
             s,
             e,
@@ -285,7 +285,7 @@ function codeColour(elmnt, mode) {
         );
     }
     function cssPropertyValueMode(txt) {
-        var rest = txt,
+        let rest = txt,
             done = "",
             s;
         rest =
@@ -327,7 +327,7 @@ function codeColour(elmnt, mode) {
         );
     }
     function jsMode(txt) {
-        var rest = txt,
+        let rest = txt,
             done = "",
             esc = [],
             i,
@@ -411,7 +411,7 @@ function codeColour(elmnt, mode) {
         return "<span style=color:" + jspropertycolor + ">" + txt + "</span>";
     }
     function getDotPos(txt, func) {
-        var x,
+        let x,
             i,
             j,
             s,
@@ -453,7 +453,7 @@ function codeColour(elmnt, mode) {
         return [-1, -1, func];
     }
     function getMinPos() {
-        var i,
+        let i,
             arr = [];
         for (i = 0; i < arguments.length; i++) {
             if (arguments[i][0] > -1) {
@@ -468,7 +468,7 @@ function codeColour(elmnt, mode) {
         return arr;
     }
     function getKeywordPos(typ, txt, func) {
-        var words,
+        let words,
             i,
             pos,
             rpos = -1,
@@ -534,7 +534,7 @@ function codeColour(elmnt, mode) {
                 "true",
                 "try",
                 "typeof",
-                "var",
+                "let",
                 "void",
                 "volatile",
                 "while",
@@ -560,7 +560,7 @@ function codeColour(elmnt, mode) {
         return [rpos, rpos2, func];
     }
     function getPos(txt, start, end, func) {
-        var s, e;
+        let s, e;
         s = txt.search(start);
         e = txt.indexOf(end, s + end.length);
         if (e == -1) {
@@ -569,7 +569,7 @@ function codeColour(elmnt, mode) {
         return [s, e + end.length, func];
     }
     function getNumPos(txt, func) {
-        var arr = [
+        let arr = [
             "<br>",
             " ",
             ";",
@@ -624,3 +624,4 @@ function codeColour(elmnt, mode) {
     }
 }
 }
+
