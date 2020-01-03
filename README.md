@@ -1,4 +1,7 @@
-# Simplebinary.github.io
-## My website, refreshed with a new look, and much more stuff!
-### I have been working on this for a while, so feel free to view it or download something!
+# SimpleBinary
 
+A minimal website to show all the projects that I am currently working on.
+
+Licenced under the [Yepic Software Licence](https://github.com/yepic/yepic-licences)
+
+Built using Metro 4

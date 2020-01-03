@@ -1,30 +1,137 @@
+<!--Built by SimpleBinary using Metro 4-->
+
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
+    <head>
+        <title>SimpleBinary</title>
+        <link rel="icon" type="image/png" href="./media/SimpleBinary2.png">
 
-<head>
-    <link rel="icon" type="image/png" href="/assets/Icon16.png">
-    <link rel="stylesheet" type="text/css" href="/style/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Roboto:300">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-    <title>Home - SimpleBinary</title>
-</head>
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<body>
-    <header>
-        <div class="navi">
-            <ul>
-                <li><a class="navImage imageActive" href="/index.html"><img src="https://simplebinary.github.io/assets/Icon.png"
-                            width="15px" height="15px"></a></li>
-                <li><a class="navButton" href="/about.html">About</a></li>
-                <li><a class="navButton" href="/stuff.html">Stuff</a></li>
-                <li><a class="navButton" href="/posts.html">Posts</a></li>
-                <li><a class="navButton navRight" href="https://github.com/SimpleBinary" target="_blank"><span class="fab fa-github"></span></a></li>
-            </ul>
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Kulim+Park:200,400&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--Metro 4 CSS-->
+        <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    </head>
+    <body class="bg-dark fg-white">
+        <!--Content-->
+        <div class="container-fluid text-center main-content">
+            <div class="row op-darkGray logo">
+                <div class="container logo">
+                    <a href="https://github.com/simplebinary"><img src="./media/SimpleBinary.png" height="100%" width="auto"></a>
+                </div>
+            </div>
+            
+            <h1 class="fg-amber"><u>Simple<b class="fg-black bg-amber">Binary</b></u></h1 class="fg-amber">
+            <h3><b>Quality Open Source Projects</b></h3>
+            <br>
+            <h2><span class="bg-amber fg-black">❝</span ></h2>
+            <h6><i class="bg-amber fg-black"><b>Quality is More Than<br>a Promise, It's<br>Genuine Performance<br><br>- Ron Kaufman</b></i></h6>
+            <br>
+            <h2 class="fg-amber"><u>Projects</u></h2>
+            <!--YepicSend-->
+            <div class="card op-black projects">
+                <div class="card-header op-lightGray fg-amber">
+                    <h3><b>YepicSend</b></h3>
+                </div>
+                <div class="card-content p-2 fg-grey">
+                    <h6>A new data messaging app for Android, Tizen and the web.<br>YepicSend manages accounts with numbers (YepicNums) that can be chosen.<br>Also, unlike other messaging apps, you don't require a phone number, so it can be used with just a computer.</h6>
+                    <i class="material-icons fg-amber" data-role="hint" data-hint-text="Work In Progress">warning</i>
+                    <h6><a class="fg-amber" href="https://github.com/YepicSend">Github</a> | <a  class="fg-amber" href="https://ys.dandigit.com">Website</a></h6>
+                </div>
+            </div>
+            <div class="card op-black projects">
+                <div class="card-header op-lightGray fg-amber">
+                    <h3><b>Hextent</b></h3>
+                </div>
+                <div class="card-content p-2 fg-grey">
+                    <h6>A browser extension that generates a new colour on every new tab.<br>It also comes with a random colour pop-up for generating random colours on the go.</h6>
+                    <i class="material-icons fg-green" data-role="hint" data-hint-text="Complete">check</i>
+                    <h6><a class="fg-amber" href="https://github.com/Simplebinary/Hextent">Github</a> | <a  class="fg-amber" href="https://addons.mozilla.org/en-US/firefox/addon/hextent/">Firefox Addons</a></h6>
+                </div>
+            </div>
+            <div class="card op-black projects">
+                <div class="card-header op-lightGray fg-amber">
+                    <h3><b>Flagpole</b></h3>
+                </div>
+                <div class="card-content p-2 fg-grey">
+                    <h6>Found a flag that you don't recognise? Flagpole can recognise flags and give you the most similar flag or flags in less than a second.</h6>
+                    <i class="material-icons fg-green" data-role="hint" data-hint-text="Complete">check</i>
+                    <h6><a class="fg-amber" href="https://github.com/Simplebinary/Flagpole">Github</a></h6>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="card op-darkGray copyright">
+                <br>
+                <b>Copyright © 2020 SimpleBinary</b>
+                <br>
+                <b><a href="https://github.com/simplebinary" class="fg-amber">Github</a></b>
+            </div>
         </div>
-    </header>
-    <h1>SimpleBinary</h1>
-    <p>Welcome to my website, feel free to look around or download something and enjoy new look of the website.</p>
-</body>
 
+        <!--Mobile Friendly CSS-->
+        <style>
+            ::selection {
+                color: #1d1d1d;
+                background-color: #f0a30a;
+            }
+            h1 u, h2 u {
+                font-family: "Kulim Park";
+                text-decoration: none;
+                padding-bottom: 7px;
+                padding-left: 17px;
+                padding-right: 17px;
+                border-bottom: 1px solid white;
+            }
+
+            h3 {
+                font-weight: 200;
+            }
+
+            .projects, .copyright {
+                margin-top: 25px;
+                border: 1px solid rgba(0,0,0,0.1);
+            }
+
+            .projects {
+                width: 50vw;
+            }
+
+            .main-content {
+                font-family: "Kulim Park";
+                margin: 0;
+                padding: 0;
+            }
+
+            .logo {
+                height: 50vw;
+            }
+
+            .copyright {
+                height: 75px;
+                margin: 0;
+            }
+
+            @media (min-width: 1452px) {
+                .logo {
+                    height: 25vw;
+                }
+            }
+
+            @media (max-width: 650px) {
+                .projects {
+                    width: 100vw;
+                }
+            }
+        </style>
+
+        <!-- Metro 4 JS-->
+        <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+
+    </body>
 </html>
