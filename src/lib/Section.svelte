@@ -51,4 +51,12 @@
     .section-seperator {
         height: 5vh;
     }
+
+    @media screen and (max-width: 680px) {
+        .section-full {
+            text-align: center;
+            font-size: 16px;
+            padding: 40px;
+        }
+    }
 </style>
