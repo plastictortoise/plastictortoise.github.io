@@ -28,7 +28,7 @@
 </script>
 
 <div class="section section-{style}">
-    <img loading="lazy" class="background background-{offsetClass}" src="{bg}" alt="{bg}">
+    <img class="background background-{offsetClass}" src="{bg}" alt="{bg}">
 </div>
 
 <style>

@@ -3,8 +3,16 @@
 </script>
 
 <script>
+	import { onMount } from "svelte";
 	import Section from "$lib/Section.svelte";
+	import Loading from "$lib/Loading.svelte";
 	import ImageSection from "$lib/ImageSection.svelte";
+
+	onMount(() => {
+		imagesLoaded( 'body', { background: true }, () => {
+			document.querySelector("#loading").style.display = "none";
+		});
+	});
 </script>
 
 <svelte:head>
@@ -12,6 +20,10 @@
 
 	<script defer src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
 </svelte:head>
+
+<div id="loading">
+	<Loading />
+</div>
 
 <Section title="Photography Zimbabwe" content="<p>Hey, I'm a computer entusiast from Zimbabwe who enjoys playing football and the ukulele.</p><p>This website is a collection of photographs from my travels around Southern Africa.</p>" bg="#0d1117" text="#ffdf36" subtext="#ffffff" />
 
