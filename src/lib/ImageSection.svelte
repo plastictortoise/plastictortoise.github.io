@@ -28,9 +28,7 @@
 </script>
 
 <div class="section section-{style}">
-    <div class="background background-{offsetClass}" style="background-image: url('{bg}');">
-
-    </div>
+    <img loading="lazy" class="background background-{offsetClass}" src="{bg}" alt="{bg}">
 </div>
 
 <style>
@@ -40,9 +38,7 @@
         box-sizing: border-box;
         width: 100%;
         height: 100vh;
-        background-size: cover !important;
-        background-repeat: no-repeat !important;
-        background-position: center !important;
+        object-fit: cover !important;
         overflow: hidden;
     }
 
