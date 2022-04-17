@@ -15,12 +15,14 @@ jobs:
           persist-credentials: false
     - uses: actions/setup-node@v1
       with:
-       node-version: 14.x
+       node-version: 16.x
     - name: Setup NPM
       run: |
         npm install
     - name: Deploy
       run: |
+        git config --global user.name "Plastic Tortoise"
+        git config --global user.email "simplebinary@yahoo.com"
         npm run deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
