@@ -24,5 +24,6 @@ jobs:
         git config --global user.name "Plastic Tortoise"
         git config --global user.email "simplebinary@yahoo.com"
         npm run deploy
+        git subtree split -b gh-pages -P build/
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
