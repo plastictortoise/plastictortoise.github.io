@@ -21,6 +21,8 @@ jobs:
         npm install
     - name: Deploy
       run: |
+        git config --global user.name "Plastic Tortoise"
+        git config --global user.email "simplebinary@yahoo.com"
         npm run deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
