@@ -16,8 +16,11 @@ jobs:
     - uses: actions/setup-node@v1
       with:
        node-version: 14.x
-    - run: |
+    - name: Setup NPM
+      run: |
         npm install
+    - name: Deploy
+      run: |
         npm run deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
