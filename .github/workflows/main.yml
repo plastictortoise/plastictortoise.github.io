@@ -21,10 +21,14 @@ jobs:
         npm install
     - name: Deploy
       run: |
-        git config --global user.name "Plastic Tortoise"
-        git config --global user.email "simplebinary@yahoo.com"
         npm run deploy
         git subtree split -b gh-pages -P build/
+        
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+        git add -A
+        git commit -m "Github Pages"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
