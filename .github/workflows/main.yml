@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Deploy
       run: |
-        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/simplebinary.github.io.git
-        npm run deploy -- -u "Github Actions <support+actions@github.com>" 
+        npm install
+        npm run deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
