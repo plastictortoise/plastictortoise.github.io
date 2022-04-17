@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-	<title>Photography Zimbabwe</title>
+	<title>Travel Photography</title>
 
 	<script defer src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
 </svelte:head>
@@ -25,7 +25,7 @@
 	<Loading />
 </div>
 
-<Section title="Photography Zimbabwe" content="<p>Hey, I'm a computer entusiast from Zimbabwe who enjoys playing football and the ukulele.</p><p>This website is a collection of photographs from my travels around Southern Africa.</p>" bg="#0d1117" text="#ffdf36" subtext="#ffffff" />
+<Section title="Travel Photography" content="<p>A collection of some of the best photographs from my travels.</p>" bg="#0d1117" text="#ffdf36" subtext="#ffffff" />
 
 <Section title="Pamushana" style="short" content="<p>June 2021</p>" />
 <ImageSection offset="1.25" style="half" bg="pamushana/sunrise.jpg" />
@@ -57,4 +57,20 @@
 <Section style="seperator" />
 <ImageSection offset="8.45" style="tall" bg="south-africa/creeper.jpg" />
 <Section style="seperator" />
-<ImageSection offset="9.25" style="full" bg="south-africa/lighthouse.jpg" />
+<ImageSection offset="9.25" style="tall" bg="south-africa/lighthouse.jpg" />
+
+<Section title="Musango" style="short" content="<p>February 2022</p>" />
+<ImageSection offset="10.25" style="half" bg="musango/lake.jpg" />
+<Section style="seperator" />
+<ImageSection offset="10.8" style="tall" bg="musango/sunset.jpg" />
+<Section style="seperator" />
+<ImageSection offset="11.6" style="half" bg="musango/stumps.jpg" />
+
+<Section title="Mauritius" style="short" content="<p>April 2022</p>" />
+<ImageSection offset="12.35" style="half" bg="mauritius/palms.jpg" />
+<Section style="seperator" />
+<ImageSection offset="12.9" style="short" bg="mauritius/coral.jpg" />
+<Section style="seperator" />
+<ImageSection offset="13.2" style="half" bg="mauritius/stars.jpg" />
+<Section style="seperator" />
+<ImageSection offset="13.75" style="full" bg="mauritius/sunset.jpg" />
