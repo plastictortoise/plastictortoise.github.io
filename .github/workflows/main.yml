@@ -19,18 +19,13 @@ jobs:
     - name: Setup NPM
       run: |
         npm install
-    - name: Deploy
+    - name: Build
       run: |
-        npm run deploy
-        git subtree split -b gh-pages -P build/
-        
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-        git stash
-        git checkout gh-pages
-        git add -A
-        git commit -m "Github Pages"
-        git push
+        npm run build
+    - name: Deploy
+      uses: s0/git-publish-subdir-action@develop
       env:
+        REPO: self
+        BRANCH: gh-pages
+        FOLDER: build
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
