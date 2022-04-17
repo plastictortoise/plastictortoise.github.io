@@ -25,5 +25,6 @@ jobs:
         git config --global user.email "simplebinary@yahoo.com"
         npm run deploy
         git subtree split -b gh-pages -P build/
+        git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
