@@ -74,3 +74,19 @@
 <ImageSection offset="13.2" style="half" bg="mauritius/stars.jpg" />
 <Section style="seperator" />
 <ImageSection offset="13.75" style="full" bg="mauritius/sunset.jpg" />
+
+<Section title="Changa" style="short" content="<p>June 2022</p>" />
+<ImageSection offset="15" style="tall" bg="changa/sunset.jpg" />
+<Section style="seperator" />
+<ImageSection offset="15.8" style="full" bg="changa/heart.jpg" />
+
+<Section title="Dubai" style="short" content="<p>August 2022</p>" />
+<ImageSection offset="17.05" style="short" bg="dubai/ceiling.jpg" />
+<Section style="seperator" />
+<ImageSection offset="17.35" style="tall" bg="dubai/desert.jpg" />
+<Section style="seperator" />
+<ImageSection offset="18.15" style="tall" bg="dubai/burj.jpg" />
+<Section style="seperator" />
+<ImageSection offset="18.95" style="half" bg="dubai/souk.jpg" />
+<Section style="seperator" />
+<ImageSection offset="19.5" style="full" bg="dubai/museum.jpg" />
