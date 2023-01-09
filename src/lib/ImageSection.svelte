@@ -1,60 +1,149 @@
 <script>
-    export let style = "half";
-    export let bg;
-    export let offset = 0;
+    export let style;
+    export let theme;
+    export let images;
+    export let title;
 
-    let offsetClass = offset.toString().split(".").join("-")
+    let span = "display";
 
-    import { onMount } from "svelte";
-
-    onMount(() => {
-        window.addEventListener('scroll', throttle(parallax, 8));
-        function throttle(fn, wait) {
-            let time = Date.now();
-            return function() {
-                if ((time + wait - Date.now()) < 0) {
-                    fn();
-                    time = Date.now();
-                }
-            }
-        };
-        function parallax() {
-            let scrolled = window.pageYOffset - ((offset) * window.innerHeight);
-            let parallax = document.querySelector(`.background-${offsetClass}`);
-            let coords = scrolled * 0.4
-            parallax.style.transform = 'translateY(' + coords + 'px)';
-        };
-    });
+    if (title == "") {
+        span = "none";
+    }
 </script>
 
-<div class="section section-{style}">
-    <img class="background background-{offsetClass}" src="{bg}" alt="{bg}">
-</div>
+{#if style == "0"}
+    <!-- 4 Images -->
+    <div class="section">
+        <img class="quarter" alt="" src={images[0]} />
+        <img class="quarter" alt="" src={images[1]} />
+        <img class="quarter" alt="" src={images[2]} />
+        <img class="quarter" alt="" src={images[3]} />
+    </div>
+{:else if style == "1"}
+	<!-- 1 Image -- Left Title -->
+    <div class="section theme-{theme}">
+        <div class="block half">
+            <h1>{title}<span class="span-{span}">.</span></h1>   
+        </div>
+        <img class="half" alt="" src={images[0]} />
+    </div>
+{:else if style == "2"}
+	<!-- 1 Image -- Right Title -->
+    <div class="section theme-{theme}">
+        <img class="half" alt="" src={images[0]} />
+        <div class="block half">
+            <h1>{title}<span class="span-{span}">.</span></h1>   
+        </div>
+    </div>
+{:else if style == "3"}
+	<!-- 2 Images -- Left Title -->
+    <div class="section theme-{theme}">
+        <div class="block half">
+            <h1>{title}<span class="span-{span}">.</span></h1>   
+        </div>
+        <img class="quarter" alt="" src={images[0]} />
+        <img class="quarter" alt="" src={images[1]} />
+    </div>
+{:else if style == "4"}
+	<!-- 2 Images -- Right Title -->
+    <div class="section theme-{theme}">
+        <img class="quarter" alt="" src={images[0]} />
+        <div class="block half">
+            <h1>{title}<span class="span-{span}">.</span></h1>   
+        </div>
+        
+        <img class="quarter" alt="" src={images[1]} />
+    </div>
+{:else if style == "5"}
+	<!-- 3 Images -- Top Left Title -->
+    <div class="section theme-{theme}">
+        <div class="block quarter">
+            <h1>{title}<span class="span-{span}">.</span></h1>   
+        </div>
+        <img class="quarter" alt="" src={images[0]} />
+        <img class="quarter" alt="" src={images[1]} />
+        <img class="quarter" alt="" src={images[2]} />
+    </div>
+{:else if style == "6"}
+	<!-- 3 Images -- Top Right Title -->
+    <div class="section theme-{theme}">
+        <img class="quarter" alt="" src={images[0]} />
+        <div class="block quarter">
+            <h1>{title}<span class="span-{span}">.</span></h1>   
+        </div>
+        <img class="quarter" alt="" src={images[1]} />
+        <img class="quarter" alt="" src={images[2]} />
+    </div>
+{:else if style == "7"}
+	<!-- 3 Images -- Bottom Left Title -->
+    <div class="section theme-{theme}">
+        <img class="quarter" alt="" src={images[0]} />
+        <img class="quarter" alt="" src={images[1]} />
+        <div class="block quarter">
+            <h1>{title}<span class="span-{span}">.</span></h1>   
+        </div>
+        <img class="quarter" alt="" src={images[2]} />
+    </div>
+{:else if style == "8"}
+	<!-- 3 Images -- Bottom Right Title -->
+    <div class="section theme-{theme}">
+        <img class="quarter" alt="" src={images[0]} />
+        <img class="quarter" alt="" src={images[1]} />
+        <img class="quarter" alt="" src={images[2]} />
+        <div class="block quarter">
+            <h1>{title}<span class="span-{span}">.</span></h1>   
+        </div>   
+    </div>
+{:else}
+	<p>Error -- Unknown style</p>
+{/if}
 
 <style>
-    .section, .background {
+    .section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%; 
+        height: 100vh;
+        width: 100vw;
         padding: 0;
         margin: 0;
-        box-sizing: border-box;
+    }
+
+    .span-none {
+        display: none;
+    }
+
+    .theme-dark {
+        background-color: #0d1117;
+	    color: #ffffff;
+    }
+
+    .theme-light {
+        background-color: #ffffff;
+	    color: #0d1117;
+    }
+    
+    img {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         object-fit: cover !important;
-        overflow: hidden;
     }
 
-    .section-full {
-        height: 100vh;
+    .block {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .section-tall {
-        height: 75vh;
+    .quarter {
+        grid-row: span 1;
+        grid-column: span 1;
     }
 
-    .section-half {
-        height: 50vh;
-    }
-
-    .section-short {
-        height: 25vh;
+    .half {
+        grid-row: span 2;
+        grid-column: span 1;
     }
 </style>
