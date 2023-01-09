@@ -4,7 +4,7 @@
 </script>
 
 <div class="section">
-    <img class="image" loading="lazy" src="{image}" alt="title">
+    <img class="image" src="{image}" alt="title">
     <div class="text">
         <h1>{title}<span>.</span></h1>    
     </div>

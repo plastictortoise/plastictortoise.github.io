@@ -99,6 +99,10 @@
 {/if}
 
 <style>
+    h1 {
+        font-size: 2em;
+    }
+
     .section {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -145,5 +149,20 @@
     .half {
         grid-row: span 2;
         grid-column: span 1;
+    }
+
+    @media screen and (max-width: 600px) {
+        .quarter, .half {
+	        scroll-snap-align: start;
+        }
+
+        .section {
+            display: block;
+            height: auto;
+        }
+
+        img, .block {
+            height: 100vh;
+        }
     }
 </style>
