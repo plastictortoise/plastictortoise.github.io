@@ -42,7 +42,6 @@
 					src={src}
 					alt={src}
 					loading="lazy"
-					onload={() => this.classList.add('loaded')}
 					class="photo"
 				/>
 			</div>
@@ -90,18 +89,13 @@
 		background: rgba(255, 255, 255, 0.05);
 	}
 
-	:global(.photo) {
+	.photo {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 		display: block;
 		transform: scale(1.12);
-		opacity: 0;
-		transition: opacity 0.8s ease, transform 0.5s ease;
-	}
-
-	:global(.photo.loaded) {
-		opacity: 1;
+		transition: transform 0.5s ease;
 	}
 
 	.visible {
