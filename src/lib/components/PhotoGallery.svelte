@@ -4,6 +4,11 @@
 	let { photos = [] } = $props();
 	const dispatch = createEventDispatcher();
 
+	function getAverageColour(photo) {
+		let averageColour = `#${photo.slice(-10, -4)}`
+		return averageColour;
+	}
+
 	function handlePhotoClick(photo) {
 		dispatch("photo-click", photo);
 	}
@@ -32,11 +37,12 @@
 			class="photo-card"
 			onclick={() => handlePhotoClick(src)}
 		>
-			<div class="photo-wrapper">
+			<div class="photo-wrapper" style="background-color: {getAverageColour(src)}">
 				<img
 					src={src}
 					alt={src}
 					loading="lazy"
+					onload={() => this.classList.add('loaded')}
 					class="photo"
 				/>
 			</div>
@@ -84,13 +90,18 @@
 		background: rgba(255, 255, 255, 0.05);
 	}
 
-	.photo {
+	:global(.photo) {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 		display: block;
-		transition: transform 0.5s ease;
 		transform: scale(1.12);
+		opacity: 0;
+		transition: opacity 0.8s ease, transform 0.5s ease;
+	}
+
+	:global(.photo.loaded) {
+		opacity: 1;
 	}
 
 	.visible {
