@@ -5,7 +5,8 @@
 	const dispatch = createEventDispatcher();
 
 	function getAverageColour(photo) {
-		let averageColour = `#${photo.slice(-10, -4)}`
+		let lastSlashIndex = photo.lastIndexOf('/');
+		let averageColour = `#${photo.slice(lastSlashIndex + 1, lastSlashIndex + 7)}`
 		return averageColour;
 	}
 
